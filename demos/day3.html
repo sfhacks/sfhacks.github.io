@@ -1,30 +1,179 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Day 3 Demo</title>
+<head>
+    <title>sfhacks Day 3 Demo</title>
     <style>
-      * {
+    * {
         font-family: Helvetica;
         text-align: center;
-      }
-      
+    }
+    body {
+        background-color: #ccffcc;
+    }
+    #main {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    #button2 {
+        padding: 14px;
+        font-size: 15px;
+        background-color: red;
+    }
+    #button2:active {
+        background-color: purple;
+    }
+    #button3 {
+        padding: 8px;
+        font-size: 13px;
+        border-radius: 22px;
+        background-color: #888888;
+    }
+    #button3:hover {
+        background-color: #BBBBBB;
+    }
+    #button3:focus {
+        background-color: green;
+    }
+
+    table {
+        margin: 0 auto;
+    }
+    #table2 {
+        border: 5px solid #115511;
+        border-collapse: collapse;
+    }
+    #table2 th {
+        background-color: #89B942;
+    }
+    #table2 td {
+        padding: 8px;
+        border: 3px solid #699922;
+        background-color: #297922;
+    }
+
+    video {
+        margin: 0 auto;
+    }
     </style>
-  </head>
-  <body>
-    <h1>Day 3 - Tables and Buttons</h1>
-    <h3>Buttons!</h3>
-    <!-- BUTTONS HERE -->
-    <h3>Tables!</h3>
-    <!-- TABLE HERE -->
-    <table>
-      <tr>
-        <td></td>
-        <td></td>
-      </tr>
-       <tr>
-        <td></td>
-        <td></td>
-      </tr>
-    </table>
-  </body>
+</head>
+<body>
+    <div id = 'main'>
+        <h1>Tables and Buttons</h1>
+        <hr/><br/>
+        <fieldset>
+            <legend>Buttons</legend>
+            <button id = 'button1'>Button1</button>
+            <button id = 'button2'>Button2</button>
+            <button id = 'button3'>Button3</button>
+        </fieldset>
+        <br/>
+        <h3>Tables!</h3>
+        <table id = 'table1' border = '8px' cellpadding = '15px'>
+            <caption>Cats and Dogs</caption>
+            <tr>
+                <th>Cats</th>
+                <th>Dogs</th>
+            </tr>
+            <tr>
+                <td>Tiger</td>
+                <td>Daisy</td>
+            </tr>
+            <tr>
+                <td>Kitty</td>
+                <td>Max</td>
+            </tr>
+            <tr>
+                <td>Whiskers</td>
+                <td>Pupper</td>
+            </tr>
+        </table>
+        <br/>
+        <table id = 'table2'>
+            <tr>
+                <th>Cats</th>
+                <th>Dogs</th>
+            </tr>
+            <tr>
+                <td>Tiger</td>
+                <td>Daisy</td>
+            </tr>
+            <tr>
+                <td>Kitty</td>
+                <td>Max</td>
+            </tr>
+            <tr>
+                <td>Whiskers</td>
+                <td>Pupper</td>
+            </tr>
+        </table>
+        <br/>
+        <code>some code</code><br/>
+        <samp>some sample output</samp>
+        <br/><br/>
+        <h2>iframes!</h2>
+        <a href = 'https://www.sfhs.com/' target = 'myiFrame'>Visit SFHS</a>&nbsp;&nbsp;
+        <a href = 'http://www.w3schools.com/' target = 'myiFrame'>Visit W3Schools</a>&nbsp;&nbsp;
+        <a href = 'http://sfhacks.club/' target = 'myiFrame'>Visit sfhacks</a>&nbsp;&nbsp;
+        <br/>
+        <iframe src = 'http://www.apple.com' name = 'myiFrame' height = '200px' width = '500px'></iframe>
+        <br/><br/>
+        <fieldset>
+            <legend>Inputs</legend>
+            <form action = 'http://google.com'>
+                <label for = 'input1'>Input1:</label>
+                <input id = 'input1' placeholder = 'put some text here' type = 'text'/><br/>
+                <label for = 'input2'>Input2:</label>
+                <input id = 'input2' placeholder = 'secret!!' type = 'password'/><br/>
+                <br/>
+                <input id = 'radio1' type = 'radio' name = 'animal'/><label for = 'radio1'> SFHS </label>
+                <input id = 'radio2' type = 'radio' name = 'animal'/><label for = 'radio2'> Bell </label>
+                <input id = 'radio3' type = 'radio' name = 'animal'/><label for = 'radio3'> Mitty </label>
+                <br/>
+                <input id = 'checkbox1' type = 'checkbox'/><label for = 'checkbox1'> Cats </label>
+                <input id = 'checkbox2' type = 'checkbox'/><label for = 'checkbox2'> Dogs </label>
+                <input id = 'checkbox3' type = 'checkbox'/><label for = 'checkbox3'> Turtles </label>
+                <br/>
+                <input type = 'search'/><br/>
+                <input type = 'color'/><br/>
+                <input type = 'number'/><br/>
+                <input type = 'file'/><br/>
+                <input type = 'image'/><br/>
+                <input type = 'date'/><br/>
+                <input type = 'time'/><br/>
+                <input type = 'week'/><br/>
+                <input type = 'month'/><br/>
+                <select>
+                    <option>Pizza</option>
+                    <option>Ice Cream</option>
+                    <option>Coffee</option>
+                    <option>Spaghetti</option>
+                    <option>Ravioli</option>
+                </select><br/>
+                <textarea rows = '5' cols = '30'></textarea><br/>
+                <input type = 'button' value = 'this is an input button'/><br/>
+                <input type = 'submit' value = 'this is a submit button'/><br/>
+            </form>
+        </fieldset>
+        <br/>
+        <h4>pre tags are strange</h4>
+        <pre>
+hey
+    what
+  up   efshkjd
+           fam
+        </pre>
+        <h3>and what about progress bars</h3>
+        <progress value = '65' max = '200'></progress>
+        <br/><br/>
+        <audio controls>
+            <source src = 'https://upload.wikimedia.org/wikipedia/commons/b/bb/Test_ogg_mp3_48kbps.wav' type = 'audio/wav'/>
+        </audio>
+        <br/>
+        <video height = '300px' width = '500px' controls>
+            <source src = 'http://graphicarts.sfhs.com/2014-2015/per4/Anuv%20Gupta/Images/video.m4v' type = 'video/mp4'/>
+        </video>
+        <br/><br/><br/>
+    </div>
+</body>
 </html>
