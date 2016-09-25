@@ -62,13 +62,13 @@ body {
 .page .content {
     width: 40%;
     min-width: 400px;
-    margin: 20px auto 10px auto;
+    margin: 0 auto 10px auto;
     color: rgba(0, 0, 0, 0.7);
     font: 17.5px BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 #page2 {
-    height: 370px;
+    height: 600px;
     background-color: #f1f1f1;
     border-top: 1px solid #BBBBBB;
 }
@@ -80,6 +80,9 @@ body {
 
 #page4 {
     height: 450px;
-    background-color: rgba(30, 30, 30, 0.4);
+    background-color: ;
     border-top: 1px solid #BBBBBB;
+    background: rgba(0, 0, 0, 0.3) url("bg.png");
+    background-size: 500px;
+    background-attachment: fixed;
 }
